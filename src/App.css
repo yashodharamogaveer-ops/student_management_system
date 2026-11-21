@@ -1,0 +1,256 @@
+#root {
+min-height: 100vh;
+}
+.navbar {
+height: 76px;
+padding: 0 max(6vw, 24px);
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #fff;
+border-bottom: 1px solid #e8edf4;
+}
+.brand {
+font:
+800 20px Manrope,
+sans-serif;
+color: #2457d6;
+letter-spacing: -0.5px;
+}
+.navbar nav {
+display: flex;
+align-items: center;
+gap: 28px;
+color: #586579;
+font-size: 14px;
+font-weight: 600;
+}
+.navbar nav a:hover {
+color: #2457d6;
+}
+.nav-button,
+.button {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+border: 0;
+border-radius: 9px;
+background: #2457d6; 
+color: white; 
+padding: 11px 17px; 
+font-weight: 700; 
+cursor: pointer; 
+}
+.nav-button:hover, 
+.button:hover { 
+background: #1946b7; 
+color: white !important; 
+}
+.page { 
+width: min(1050px, calc(100% - 40px)); 
+margin: 52px auto; 
+}
+.welcome-card { 
+padding: clamp(30px, 6vw, 66px); 
+border-radius: 20px; 
+color: white; 
+background: linear-gradient(120deg, #214fc5, #4777e9); 
+}
+.eyebrow { 
+margin: 0 0 12px; 
+color: #6b7b91; 
+font-size: 11px; 
+font-weight: 700; 
+letter-spacing: 1.4px; 
+}
+.welcome-card .eyebrow { 
+color: #d5e1ff; 
+}
+h1 { 
+margin: 0; 
+font: 
+800 clamp(30px, 5vw, 46px) Manrope, 
+sans-serif; 
+letter-spacing: -1.6px; 
+}
+.welcome-card h1 { 
+max-width: 620px; 
+}
+.intro { 
+color: #748197; 
+line-height: 1.6; 
+}
+.welcome-card .intro { 
+max-width: 490px; 
+color: #e2eaff; 
+}
+.home-actions { 
+display: flex; 
+gap: 12px; 
+margin-top: 27px; 
+}
+.secondary-button { 
+background: white; 
+color: #334155; 
+border: 1px solid #dfe5ee; 
+}
+.secondary-button:hover { 
+background: #f5f7fb; 
+color: #1e293b !important; 
+}
+.summary-card { 
+width: 240px; 
+margin-top: 22px; 
+padding: 20px 23px; 
+border-radius: 14px; 
+background: #fff; 
+border: 1px solid #e8edf4; 
+}
+.summary-label { 
+display: block; 
+color: #748197; 
+font-size: 13px; 
+}
+.summary-card strong { 
+display: block; 
+margin-top: 8px; 
+color: #2457d6; 
+font: 
+800 32px Manrope, 
+sans-serif; 
+}
+.page-heading { 
+display: flex; 
+align-items: center; 
+justify-content: space-between; 
+margin-bottom: 28px; 
+}
+.page-heading h1, 
+.form-page h1 { 
+font-size: 34px; 
+}
+.page-heading .intro, 
+.form-page .intro { 
+margin-bottom: 0; 
+}
+.table-wrap { 
+overflow-x: auto; 
+border: 1px solid #e7ecf3; 
+border-radius: 13px; 
+background: white; 
+}
+table { 
+width: 100%; 
+border-collapse: collapse; 
+text-align: left; 
+font-size: 14px; 
+}
+th, 
+td { 
+padding: 16px 18px; 
+border-bottom: 1px solid #edf0f5; 
+}
+th { 
+color: #6c788b; 
+background: #fafbfd; 
+font-size: 12px; 
+text-transform: uppercase; 
+letter-spacing: 0.5px; 
+}
+tbody tr:last-child td { 
+border-bottom: 0; 
+}
+.actions { 
+white-space: nowrap; 
+}
+.text-button { 
+padding: 0; 
+border: 0; 
+background: none; 
+color: #2457d6; 
+font-weight: 700; 
+cursor: pointer; 
+}
+.delete-button { 
+margin-left: 14px; 
+color: #d14343; 
+}
+.empty-state { 
+padding: 35px; 
+text-align: center; 
+color: #748197; 
+border: 1px dashed #ccd5e3; 
+border-radius: 12px; 
+background: white; 
+}
+.form-page { 
+max-width: 660px; 
+padding: 34px; 
+border: 1px solid #e7ecf3; 
+border-radius: 15px; 
+background: white; 
+}
+.student-form { 
+display: grid; 
+gap: 18px; 
+margin-top: 28px; 
+}
+.student-form label { 
+display: grid; 
+gap: 8px; 
+color: #48566b; 
+font-size: 13px; 
+font-weight: 700; 
+}
+.student-form input, 
+.student-form select { 
+width: 100%; 
+padding: 12px 13px; 
+color: #1e293b; 
+border: 1px solid #dce3ed; 
+border-radius: 8px; 
+outline: none; 
+background: white; 
+}
+.student-form input:focus, 
+.student-form select:focus { 
+border-color: #4777e9; 
+box-shadow: 0 0 0 3px #e8efff; 
+}
+.form-actions { 
+display: flex; 
+justify-content: flex-end; 
+gap: 10px; 
+margin-top: 5px; 
+}
+@media (max-width: 600px) { 
+.navbar { 
+height: auto; 
+min-height: 70px; 
+padding: 16px 20px; 
+gap: 15px; 
+flex-wrap: wrap; 
+} 
+.navbar nav { 
+gap: 15px; 
+font-size: 13px; 
+} 
+.nav-button { 
+padding: 9px 11px; 
+} 
+.page { 
+margin: 30px auto; 
+} 
+.page-heading { 
+align-items: flex-start; 
+gap: 18px; 
+flex-direction: column; 
+} 
+.form-page { 
+padding: 24px 18px; 
+} 
+.home-actions { 
+align-items: flex-start; 
+flex-direction: column; 
+} 
+} 
